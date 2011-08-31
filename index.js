@@ -40,9 +40,9 @@ var HandleDir = function(dir, level) {
         //console.log("id3 -l '" + cmdlineesc(fullpath) + "'");
         var cmdline;
         if (matches[3] == '') {
-          cmdline = "id3 -a '" + cmdlineesc(matches[1]) + "' -A '" + cmdlineesc(matches[2]) + "' -t '" + cmdlineesc(matches[4]) + "'  '" + cmdlineesc(fullpath) + "'";
+          cmdline = "id3v2 -a '" + cmdlineesc(matches[1]) + "' -A '" + cmdlineesc(matches[2]) + "' -t '" + cmdlineesc(matches[4]) + "'  '" + cmdlineesc(fullpath) + "'";
         } else {
-          cmdline = "id3 -a '" + cmdlineesc(matches[1]) + "' -A '" + cmdlineesc(matches[2]) + "' -T '" + cmdlineesc(matches[3]) + "' -t '" + cmdlineesc(matches[4]) + "'  '" + cmdlineesc(fullpath) + "'";
+          cmdline = "id3v2 -a '" + cmdlineesc(matches[1]) + "' -A '" + cmdlineesc(matches[2]) + "' -T '" + cmdlineesc(matches[3]) + "' -t '" + cmdlineesc(matches[4]) + "'  '" + cmdlineesc(fullpath) + "'";
         }
         console.log(cmdline);
         eecs[eecs.length] = cmdline;
