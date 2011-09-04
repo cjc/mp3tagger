@@ -16,6 +16,7 @@ var baseDir = process.argv[2];
 //console.log("Base Dir  - " + baseDir);
 
 var cmdlineesc = function(str) {
+str = str || '';
 return str.replace(/'/g,"\'\\\'\'");
 }
 
